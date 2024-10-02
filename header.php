@@ -52,7 +52,7 @@
 			</div><!-- .site-branding -->
 
 
-			<!-- the place to change the html button text "esc_html_e('primary menu name here.') -->
+			<!-- the place to change the html button text "esc_html_e('') -->
 			<nav id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu"
 					aria-expanded="false"><?php esc_html_e('Menu', 'thepumpkingirl'); ?></button>

@@ -648,10 +648,8 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-	display: flex;
 	width: 100%;
-	flex-wrap: wrap;
-	justify-content: center;
+
 }
 
 .main-navigation ul {
@@ -996,6 +994,16 @@ textarea {
 
 .main-navigation button {
 	height: 100%;
-	margin: 0 auto;
-	background-color: blue;
+	margin: 0.5rem auto;
+}
+
+.main-navigation.toggled {
+	text-align: center;
+}
+
+.nav-menu a {
+	background-color: #402d48;
+	padding: 0.5rem;
+	color: rgb(239, 155, 95);
+
 }
