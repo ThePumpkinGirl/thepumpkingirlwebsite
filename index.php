@@ -17,10 +17,17 @@ get_header();
 
 <main id="primary" class="site-main">
 
-	<h2>hello</h2>
+
+	<div class="welcome-container">
+		<div class="welcome-message">
+			<h2>Welcome to my site!</h2>
+		</div>
+	</div>
+
+
 
 </main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

@@ -84,22 +84,22 @@ function thepumpkingirl_setup()
 	);
 
 	// Add theme support for selective refresh for widgets.
-	add_theme_support('customize-selective-refresh-widgets');
+	// add_theme_support('customize-selective-refresh-widgets');
 
 	/**
 	 * Add support for core custom logo.
 	 *
 	 * @link https://codex.wordpress.org/Theme_Logo
 	 */
-	add_theme_support(
-		'custom-logo',
-		array(
-			'height' => 250,
-			'width' => 250,
-			'flex-width' => true,
-			'flex-height' => true,
-		)
-	);
+	// add_theme_support(
+	// 	'custom-logo',
+	// 	array(
+	// 		'height' => 250,
+	// 		'width' => 250,
+	// 		'flex-width' => true,
+	// 		'flex-height' => true,
+	// 	)
+	// );
 }
 add_action('after_setup_theme', 'thepumpkingirl_setup');
 
@@ -181,3 +181,10 @@ if (defined('JETPACK__VERSION')) {
 }
 
 
+// fonts
+
+function my_child_theme_google_fonts()
+{
+	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap', false);
+}
+add_action('wp_enqueue_scripts', 'my_child_theme_google_fonts');
