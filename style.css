@@ -1111,3 +1111,13 @@ textarea {
 	width: 50px;
 	height: 50px;
 }
+
+.social-media {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 2rem 0.5rem;
+	gap: 1.5rem;
+}

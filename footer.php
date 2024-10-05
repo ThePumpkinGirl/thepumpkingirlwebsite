@@ -32,12 +32,16 @@
 	</div>
 
 	<div class="social-media">
-		<a href="">
+		<a href="https://www.teacherspayteachers.com/store/digital-pumpkin" target="_blank">
 			<img src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/icons8-book-50.png" alt="">
 
 		</a>
-		<a href=""></a>
-		<a href=""></a>
+		<a href="https://www.artstation.com/digital_pumpkin" target="_blank"><img
+				src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/icons8-artstation-50.png" alt="">
+		</a>
+		<a href="https://www.instagram.com/ddigital_pumpkinn/" target="_blank"><img
+				src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/icons8-instagram-50.png" alt="">
+		</a>
 
 	</div>
 
