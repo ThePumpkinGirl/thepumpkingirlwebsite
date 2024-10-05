@@ -61,8 +61,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 
-/* google fonts */
+/* root */
 
+:root {
+	--background-color: #1e1323;
+	--font-color: #ffcc98;
+	--button-color: #f9ab6b;
+	--button-border: #f79444;
+
+}
 
 
 
@@ -410,7 +417,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #ffcc98;
+	color: var(--font-color);
 	font-family: "Afacad Flux", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -480,7 +487,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #1e1323;
+	background: var(--background-color);
 }
 
 hr {
@@ -570,9 +577,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: #f79444;
+	border-color: var(--button-border);
 	border-radius: 3px;
-	background: #f9ab6b;
+	background: var(--button-color);
 	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
@@ -582,7 +589,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #f79444;
+	border-color: var(--button-border);
 }
 
 button:active,
@@ -593,7 +600,7 @@ input[type="reset"]:active,
 input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
-	border-color: #f79444;
+	border-color: var(--button-border);
 }
 
 input[type="text"],
@@ -982,20 +989,24 @@ textarea {
 .site-branding {
 	display: flex;
 	flex-wrap: wrap;
+	padding: 1rem 0.5rem 0.5rem 0.5rem;
+	gap: 1rem;
 	justify-content: center;
-	padding: 1.5rem;
-	gap: 1.5rem;
+	align-items: center;
 }
 
 .custom-logo {
-
 	width: 100px;
 	height: 100px;
 }
 
 .site-title a {
-	color: rgb(255, 200, 161);
+	color: rgb(252, 149, 76);
 	text-decoration: none;
+	font-size: clamp(1.5rem, 10vw, 3rem);
+	font-family: "DotGothic16", sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 /* menu */
@@ -1046,11 +1057,57 @@ textarea {
 
 .welcome-message h2 {
 	font-size: clamp(2rem, 14vw, 3rem);
+	letter-spacing: 1px;
 }
 
 
 /* footer */
 
 .footer-container {
-	background-color: pink;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	gap: 1rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer-container p {
+	margin: 0;
+}
+
+.footer-container a {
+	text-decoration: none;
+	color: #ffcc98;
+}
+
+.site-map {
+	border-top: 1px solid var(--button-border);
+	border-bottom: 1px solid var(--button-border);
+}
+
+.site-map ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.site-map li {
+	list-style: none;
+	padding: 0.5rem;
+}
+
+.site-map a {
+	text-decoration: none;
+	color: var(--button-border);
+}
+
+.social-media img {
+	display: block;
+	width: 50px;
+	height: 50px;
 }

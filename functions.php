@@ -185,6 +185,6 @@ if (defined('JETPACK__VERSION')) {
 
 function my_child_theme_google_fonts()
 {
-	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap', false);
+	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=DotGothic16&display=swap', false);
 }
 add_action('wp_enqueue_scripts', 'my_child_theme_google_fonts');
