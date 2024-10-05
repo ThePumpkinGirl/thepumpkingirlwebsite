@@ -1037,27 +1037,66 @@ textarea {
 	margin: 0 auto;
 	width: auto;
 	height: auto;
-	padding: 2rem;
-	background-color: pink;
+	/* padding-top: 5rem; */
+	background-color: var(--background-color);
 	background-image: url('img/css-animation-bg-01.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .welcome-message {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 	margin: 0 auto;
-	height: auto;
-	width: 100%;
-	text-align: center;
-	padding: 1rem;
 }
+
+.ghost {
+	/* display: flex; */
+	position: sticky;
+}
+
+.ghost-body {
+	width: 150px;
+	margin-left: 1rem;
+	position: relative;
+}
+
+.ghost-arm {
+	position: absolute;
+	left: 140px;
+	top: 140px;
+	width: 90px;
+	animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+	0% {
+		transform: rotate(0deg);
+		/* Starting position */
+	}
+
+	25% {
+		transform: rotate(-20deg);
+		/* Wave to the left */
+	}
+
+	50% {
+		transform: rotate(0deg);
+		/* Back to center */
+	}
+
+
+}
+
+.welcome-text {
+	/* position: relative;
+	top: -130px; */
+}
+
 
 .welcome-message h2 {
 	font-size: clamp(2rem, 14vw, 3rem);
 	letter-spacing: 1px;
+	text-shadow: -1px 1px black;
+	text-align: center;
 }
 
 
@@ -1104,6 +1143,10 @@ textarea {
 .site-map a {
 	text-decoration: none;
 	color: var(--button-border);
+}
+
+.site-map li:hover {
+	background-color: #402d48;
 }
 
 .social-media img {

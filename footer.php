@@ -33,14 +33,17 @@
 
 	<div class="social-media">
 		<a href="https://www.teacherspayteachers.com/store/digital-pumpkin" target="_blank">
-			<img src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/icons8-book-50.png" alt="">
+			<img src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/icons8-book-50.png"
+				alt="Icon of a book, if clicked will take you to Sara's Teachers Pay Teachers Store.">
 
 		</a>
 		<a href="https://www.artstation.com/digital_pumpkin" target="_blank"><img
-				src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/icons8-artstation-50.png" alt="">
+				src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/icons8-artstation-50.png"
+				alt="ArtStation icon, if clicked will take you to Sara's ArtStation art profile.">
 		</a>
 		<a href="https://www.instagram.com/ddigital_pumpkinn/" target="_blank"><img
-				src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/icons8-instagram-50.png" alt="">
+				src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/icons8-instagram-50.png"
+				alt="Instagram icon, if clicked will take you to Sara's Instagram art profile.">
 		</a>
 
 	</div>

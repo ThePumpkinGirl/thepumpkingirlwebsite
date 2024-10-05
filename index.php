@@ -20,7 +20,24 @@ get_header();
 
 	<div class="welcome-container">
 		<div class="welcome-message">
-			<h2>Welcome to my site!</h2>
+			<div class="welcome-text">
+				<h2>Welcome to my site!</h2>
+			</div>
+			<div class="ghost">
+				<div class="ghost-body">
+					<img src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/ghost-no-arm.png"
+						alt="PNG image of Sara's ghost.">
+
+				</div>
+				<div class="ghost-arm">
+					<img src="https://thepumpkingirl.ca/wp-content/uploads/2024/10/ghost-arm-animation.png"
+						alt="PMG image of Sara's ghost characters arm, waving.">
+				</div>
+
+			</div>
+
+
+
 		</div>
 	</div>
 
