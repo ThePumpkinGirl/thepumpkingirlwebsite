@@ -21,7 +21,7 @@ get_header();
 	<div class="welcome-container">
 		<div class="welcome-message">
 			<div class="welcome-text">
-				<h2>Welcome to my site!</h2>
+				<h2>Hello there! Welcome!</h2>
 			</div>
 			<div class="ghost">
 				<div class="ghost-body">

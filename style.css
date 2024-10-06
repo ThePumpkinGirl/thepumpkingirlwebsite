@@ -664,6 +664,7 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
 	width: 100%;
+	padding-bottom: 1rem;
 
 }
 
@@ -726,6 +727,9 @@ textarea {
 
 	.main-navigation ul {
 		display: flex;
+
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -1061,10 +1065,13 @@ textarea {
 
 .ghost-arm {
 	position: absolute;
-	left: 140px;
+	left: 130px;
 	top: 140px;
 	width: 90px;
+	transform-origin: left;
+	/* transform origin: left anchors the left side of the container so it wont be apart of the rotate animation */
 	animation: wave 2s infinite ease-in-out;
+	z-index: -1;
 }
 
 @keyframes wave {
@@ -1074,13 +1081,19 @@ textarea {
 	}
 
 	25% {
-		transform: rotate(20deg);
-		/* Wave to the left */
+		transform: rotate(-25deg);
 	}
 
 	50% {
 		transform: rotate(0deg);
-		/* Back to center */
+	}
+
+	75% {
+		transform: rotate(-15deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
 	}
 
 
