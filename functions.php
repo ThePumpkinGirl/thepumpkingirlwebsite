@@ -188,3 +188,29 @@ function my_child_theme_google_fonts()
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=DotGothic16&display=swap', false);
 }
 add_action('wp_enqueue_scripts', 'my_child_theme_google_fonts');
+
+
+// seperate style sheets for each page
+function enqueue_custom_page_styles()
+{
+	if (is_page('about')) {
+		wp_enqueue_style('about-style', get_stylesheet_directory_uri() . '/about.css');
+	}
+
+	if (is_page('art-blog')) {
+		wp_enqueue_style('art-blog-style', get_stylesheet_directory_uri() . '/art-blog.css');
+	}
+
+	if (is_page('illustration')) {
+		wp_enqueue_style('illustration-style', get_stylesheet_directory_uri() . '/illustration.css');
+	}
+
+	if (is_page('css-animations')) {
+		wp_enqueue_style('css-animations-style', get_stylesheet_directory_uri() . '/animations.css');
+	}
+
+	if (is_page('info-blog')) {
+		wp_enqueue_style('info-style', get_stylesheet_directory_uri() . '/info.css');
+	}
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_page_styles');

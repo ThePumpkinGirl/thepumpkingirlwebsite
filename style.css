@@ -68,6 +68,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--font-color: #ffcc98;
 	--button-color: #f9ab6b;
 	--button-border: #f79444;
+	--nav-background: #402d48;
+	--button-bg: #dfc9e9;
 
 }
 
@@ -110,6 +112,7 @@ main {
 h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
+	padding: 0 2rem;
 }
 
 /* Grouping content
@@ -433,7 +436,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	padding: 0 0.5rem;
 }
 
 dfn,
@@ -1004,6 +1007,10 @@ textarea {
 	height: 100px;
 }
 
+.site-title {
+	margin: 0;
+}
+
 .site-title a {
 	color: rgb(252, 149, 76);
 	text-decoration: none;
@@ -1011,6 +1018,7 @@ textarea {
 	font-family: "DotGothic16", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+
 }
 
 /* menu */
@@ -1029,6 +1037,15 @@ textarea {
 	padding: 0.5rem;
 	color: rgb(239, 155, 95);
 
+}
+
+.nav-menu a:hover {
+	background-color: var(--background-color);
+}
+
+
+.menu-menu-1-container {
+	background-color: var(--nav-background);
 }
 
 
@@ -1061,6 +1078,7 @@ textarea {
 	width: 150px;
 	margin-left: 1rem;
 	position: relative;
+	height: 209px;
 }
 
 .ghost-arm {
@@ -1100,8 +1118,7 @@ textarea {
 }
 
 .welcome-text {
-	/* position: relative;
-	top: -130px; */
+	text-align: center;
 }
 
 
@@ -1124,6 +1141,7 @@ textarea {
 	gap: 1rem;
 	margin: 0 auto;
 	text-align: center;
+	font-size: 0.7rem;
 }
 
 .footer-container p {
@@ -1176,4 +1194,22 @@ textarea {
 	margin: 0 auto;
 	padding: 2rem 0.5rem;
 	gap: 1.5rem;
+}
+
+
+
+/* pages  */
+
+
+.entry-content p {
+	width: auto;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+@media screen and (min-width: 50em) {
+
+	.entry-content p {
+		width: 960px;
+	}
 }
