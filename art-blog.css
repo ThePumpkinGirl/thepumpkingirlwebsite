@@ -3,3 +3,7 @@
     margin: 2rem 0;
     color: var(--nav-background);
 }
+
+.wp-block-button a:hover {
+    background-color: var(--font-color);
+}

@@ -1,0 +1,21 @@
+.wp-block-button a {
+    background-color: var(--button-bg);
+    margin: 0.5rem 0;
+    color: var(--nav-background);
+}
+
+.wp-block-button a:hover {
+    background-color: var(--font-color);
+}
+
+.wp-block-gallery {
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 50em) {
+
+    .wp-block-gallery {
+        width: 960px;
+    }
+}

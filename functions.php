@@ -209,8 +209,8 @@ function enqueue_custom_page_styles()
 		wp_enqueue_style('css-animations-style', get_stylesheet_directory_uri() . '/animations.css');
 	}
 
-	if (is_page('info-blog')) {
-		wp_enqueue_style('info-style', get_stylesheet_directory_uri() . '/info.css');
-	}
+	// if (is_page('contact-blog')) {
+	// 	wp_enqueue_style('contact-style', get_stylesheet_directory_uri() . '/contact.css');
+	// }
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_page_styles');

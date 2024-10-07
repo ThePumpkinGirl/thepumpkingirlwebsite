@@ -1,0 +1,9 @@
+.wp-block-button a {
+    background-color: var(--button-bg);
+    margin: 1.5rem 0;
+    color: var(--nav-background);
+}
+
+.wp-block-button a:hover {
+    background-color: var(--font-color);
+}

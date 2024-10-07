@@ -433,6 +433,7 @@ h4,
 h5,
 h6 {
 	clear: both;
+	padding: 0 2rem;
 }
 
 p {
@@ -1018,6 +1019,7 @@ textarea {
 	font-family: "DotGothic16", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	letter-spacing: 2px;
 
 }
 
@@ -1196,6 +1198,16 @@ textarea {
 	gap: 1.5rem;
 }
 
+.social-media a {
+	padding: 0.25rem;
+}
+
+.social-media a:hover {
+	background-color: #411837;
+	padding: 0.25rem;
+	border-radius: 5px;
+}
+
 
 
 /* pages  */
@@ -1211,5 +1223,34 @@ textarea {
 
 	.entry-content p {
 		width: 960px;
+		/* text-align: center; */
 	}
+
+
+
+	/* contact info page */
+	.name-title p {
+		width: 960px;
+	}
+
+	.info-body {
+		width: 960px;
+	}
+
+
+}
+
+
+
+/* contact info */
+
+.name-title p {
+	padding: 0 2rem;
+	background-color: var(--nav-background);
+	font-size: 2rem;
+}
+
+.info-body {
+	background-color: #533d5d;
+	margin: 0 auto;
 }
