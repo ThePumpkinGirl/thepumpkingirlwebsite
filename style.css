@@ -113,6 +113,8 @@ h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 	padding: 0 2rem;
+	background-color: transparent;
+
 }
 
 /* Grouping content
@@ -492,7 +494,14 @@ big {
 --------------------------------------------- */
 body {
 	background: var(--background-color);
+	background-image: url('img/ghost-pattern.png');
+	background-size: 170px;
 }
+
+
+
+
+
 
 hr {
 	background-color: #ccc;
@@ -992,6 +1001,13 @@ textarea {
 /* ------------------Saras edits */
 
 
+/* header */
+
+.site-header {
+	background-color: var(--background-color);
+}
+
+
 /* site branding (logo and name - both link to home/main page */
 
 .site-branding {
@@ -1022,6 +1038,8 @@ textarea {
 	letter-spacing: 2px;
 
 }
+
+
 
 /* menu */
 
@@ -1134,6 +1152,10 @@ textarea {
 
 /* footer */
 
+.site-footer {
+	background-color: var(--background-color);
+}
+
 .footer-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -1245,7 +1267,6 @@ textarea {
 /* contact info */
 
 .name-title p {
-	padding: 0 2rem;
 	background-color: var(--nav-background);
 	font-size: 2rem;
 }
